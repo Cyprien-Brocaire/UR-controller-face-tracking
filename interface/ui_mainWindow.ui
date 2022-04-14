@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>867</width>
+    <height>814</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>861</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="leftMargin">
+      <number>5</number>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="ControlBar" native="true">
+       <property name="maximumSize">
+        <size>
+         <width>250</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_11">
+          <item>
+           <widget class="QPushButton" name="pushButton_toggleTracking">
+            <property name="text">
+             <string>Run FaceTracking</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_mode">
+            <item>
+             <property name="text">
+              <string>--select mode---</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>linear tracking</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>rotary tracking</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>combined tracking</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QPushButton" name="pushButton_reset">
+            <property name="text">
+             <string>Reset</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_posJointMode">
+            <property name="text">
+             <string>Joint Mode</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="Line" name="line_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_posX">
+            <property name="text">
+             <string>Pos X :</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="horizontalSlider_posX">
+            <property name="minimum">
+             <number>-500</number>
+            </property>
+            <property name="maximum">
+             <number>500</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_posY">
+            <property name="text">
+             <string>Pos Y :</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="horizontalSlider_posY">
+            <property name="minimum">
+             <number>-500</number>
+            </property>
+            <property name="maximum">
+             <number>500</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_posZ">
+            <property name="text">
+             <string>Pos Z :</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="horizontalSlider_posZ">
+            <property name="minimum">
+             <number>-500</number>
+            </property>
+            <property name="maximum">
+             <number>500</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_posRotX">
+            <property name="text">
+             <string>Pos rotX :</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="horizontalSlider_posRotX">
+            <property name="minimum">
+             <number>-800</number>
+            </property>
+            <property name="maximum">
+             <number>800</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_posRotY">
+            <property name="text">
+             <string>Pos rotY :</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="horizontalSlider_posRotY">
+            <property name="minimum">
+             <number>-800</number>
+            </property>
+            <property name="maximum">
+             <number>800</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_posRotZ">
+            <property name="text">
+             <string>Pos rotZ :</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSlider" name="horizontalSlider_posRotZ">
+            <property name="minimum">
+             <number>-800</number>
+            </property>
+            <property name="maximum">
+             <number>800</number>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_4">
+              <item>
+               <widget class="QLabel" name="label_base">
+                <property name="text">
+                 <string>Base : </string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QDial" name="dial_base">
+                <property name="minimum">
+                 <number>-340</number>
+                </property>
+                <property name="maximum">
+                 <number>340</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_7">
+                <item>
+                 <widget class="QLabel" name="label_elbow">
+                  <property name="text">
+                   <string>Elbow :</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QDial" name="dial_elbow">
+                  <property name="minimum">
+                   <number>-340</number>
+                  </property>
+                  <property name="maximum">
+                   <number>340</number>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_9">
+                  <item>
+                   <widget class="QLabel" name="label_wrist2">
+                    <property name="text">
+                     <string>wrist2</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QDial" name="dial_wrist2">
+                    <property name="minimum">
+                     <number>-340</number>
+                    </property>
+                    <property name="maximum">
+                     <number>340</number>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_6">
+              <item>
+               <widget class="QLabel" name="label_shoulder">
+                <property name="text">
+                 <string>Shoulder :</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QDial" name="dial_shoulder">
+                <property name="minimum">
+                 <number>-340</number>
+                </property>
+                <property name="maximum">
+                 <number>340</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_8">
+                <item>
+                 <widget class="QLabel" name="label_wrist1">
+                  <property name="text">
+                   <string>Wrist1</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QDial" name="dial_wrist1">
+                  <property name="minimum">
+                   <number>-340</number>
+                  </property>
+                  <property name="maximum">
+                   <number>340</number>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_10">
+                  <item>
+                   <widget class="QLabel" name="label_wrist3">
+                    <property name="text">
+                     <string>wrist3</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QDial" name="dial_wrist3">
+                    <property name="minimum">
+                     <number>-340</number>
+                    </property>
+                    <property name="maximum">
+                     <number>340</number>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line_2">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_12">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>867</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSettings">
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionOpen_Settings"/>
+   </widget>
+   <addaction name="menuSettings"/>
+  </widget>
+  <action name="actionOpen_Settings">
+   <property name="text">
+    <string>Open Settings</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
